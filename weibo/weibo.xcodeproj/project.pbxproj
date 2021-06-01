@@ -12,7 +12,7 @@
 		ED59EB4E1C7DA219005A31EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59EB4D1C7DA219005A31EE /* ViewController.swift */; };
 		ED59EB511C7DA219005A31EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED59EB4F1C7DA219005A31EE /* Main.storyboard */; };
 		ED59EB531C7DA219005A31EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED59EB521C7DA219005A31EE /* Assets.xcassets */; };
-		ED59EB561C7DA219005A31EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED59EB541C7DA219005A31EE /* LaunchScreen.storyboard */; };
+		ED59EB721C7DC534005A31EE /* SXPtabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59EB711C7DC534005A31EE /* SXPtabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		ED59EB4D1C7DA219005A31EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ED59EB501C7DA219005A31EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED59EB521C7DA219005A31EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ED59EB551C7DA219005A31EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED59EB571C7DA219005A31EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED59EB711C7DC534005A31EE /* SXPtabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SXPtabBarViewController.swift; path = weibo/Common/SXPtabBarViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,14 +78,178 @@
 		ED59EB4A1C7DA219005A31EE /* weibo */ = {
 			isa = PBXGroup;
 			children = (
+				ED59EB631C7DC34E005A31EE /* Common */,
+				ED59EB641C7DC34E005A31EE /* Libs */,
+				ED59EB651C7DC34E005A31EE /* UIs */,
+				ED59EB6B1C7DC34E005A31EE /* ViewMoels */,
+				ED59EB5D1C7DC331005A31EE /* Models */,
 				ED59EB4B1C7DA219005A31EE /* AppDelegate.swift */,
 				ED59EB4D1C7DA219005A31EE /* ViewController.swift */,
 				ED59EB4F1C7DA219005A31EE /* Main.storyboard */,
 				ED59EB521C7DA219005A31EE /* Assets.xcassets */,
-				ED59EB541C7DA219005A31EE /* LaunchScreen.storyboard */,
 				ED59EB571C7DA219005A31EE /* Info.plist */,
 			);
 			path = weibo;
+			sourceTree = "<group>";
+		};
+		ED59EB5D1C7DC331005A31EE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED59EB611C7DC331005A31EE /* Message */,
+				ED59EB5E1C7DC331005A31EE /* Finds */,
+				ED59EB5F1C7DC331005A31EE /* Home */,
+				ED59EB601C7DC331005A31EE /* Login */,
+				ED59EB621C7DC331005A31EE /* Setting */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ED59EB5E1C7DC331005A31EE /* Finds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Finds;
+			sourceTree = "<group>";
+		};
+		ED59EB5F1C7DC331005A31EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ED59EB601C7DC331005A31EE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ED59EB611C7DC331005A31EE /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		ED59EB621C7DC331005A31EE /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		ED59EB631C7DC34E005A31EE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ED59EB711C7DC534005A31EE /* SXPtabBarViewController.swift */,
+			);
+			name = Common;
+			path = Models/Common;
+			sourceTree = "<group>";
+		};
+		ED59EB641C7DC34E005A31EE /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libs;
+			path = Models/Libs;
+			sourceTree = "<group>";
+		};
+		ED59EB651C7DC34E005A31EE /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				ED59EB661C7DC34E005A31EE /* Finds */,
+				ED59EB671C7DC34E005A31EE /* Home */,
+				ED59EB681C7DC34E005A31EE /* Login */,
+				ED59EB691C7DC34E005A31EE /* Message */,
+				ED59EB6A1C7DC34E005A31EE /* Setting */,
+			);
+			name = UIs;
+			path = Models/UIs;
+			sourceTree = "<group>";
+		};
+		ED59EB661C7DC34E005A31EE /* Finds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Finds;
+			sourceTree = "<group>";
+		};
+		ED59EB671C7DC34E005A31EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ED59EB681C7DC34E005A31EE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ED59EB691C7DC34E005A31EE /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		ED59EB6A1C7DC34E005A31EE /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		ED59EB6B1C7DC34E005A31EE /* ViewMoels */ = {
+			isa = PBXGroup;
+			children = (
+				ED59EB6C1C7DC34E005A31EE /* Finds */,
+				ED59EB6D1C7DC34E005A31EE /* Home */,
+				ED59EB6E1C7DC34E005A31EE /* Login */,
+				ED59EB6F1C7DC34E005A31EE /* Message */,
+				ED59EB701C7DC34E005A31EE /* Setting */,
+			);
+			name = ViewMoels;
+			path = Models/ViewMoels;
+			sourceTree = "<group>";
+		};
+		ED59EB6C1C7DC34E005A31EE /* Finds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Finds;
+			sourceTree = "<group>";
+		};
+		ED59EB6D1C7DC34E005A31EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		ED59EB6E1C7DC34E005A31EE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		ED59EB6F1C7DC34E005A31EE /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		ED59EB701C7DC34E005A31EE /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +281,7 @@
 		ED59EB401C7DA219005A31EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SXP;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = shixinPeng;
@@ -149,7 +314,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED59EB561C7DA219005A31EE /* LaunchScreen.storyboard in Resources */,
 				ED59EB531C7DA219005A31EE /* Assets.xcassets in Resources */,
 				ED59EB511C7DA219005A31EE /* Main.storyboard in Resources */,
 			);
@@ -211,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED59EB4E1C7DA219005A31EE /* ViewController.swift in Sources */,
+				ED59EB721C7DC534005A31EE /* SXPtabBarViewController.swift in Sources */,
 				ED59EB4C1C7DA219005A31EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,14 +389,6 @@
 				ED59EB501C7DA219005A31EE /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ED59EB541C7DA219005A31EE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED59EB551C7DA219005A31EE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -324,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.abc.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -336,6 +494,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.abc.weibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

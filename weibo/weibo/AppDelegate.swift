@@ -15,7 +15,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //添加跟视图
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        //设置根视图
+        window?.rootViewController = SXPtabBarViewController()
+        
+        //显示主窗口
+        window?.makeKeyAndVisible()
+        
+        
+        
         return true
     }
 
