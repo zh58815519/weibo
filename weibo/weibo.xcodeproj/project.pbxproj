@@ -13,6 +13,11 @@
 		ED59EB511C7DA219005A31EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED59EB4F1C7DA219005A31EE /* Main.storyboard */; };
 		ED59EB531C7DA219005A31EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED59EB521C7DA219005A31EE /* Assets.xcassets */; };
 		ED59EB721C7DC534005A31EE /* SXPtabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59EB711C7DC534005A31EE /* SXPtabBarViewController.swift */; };
+		ED59EB741C7DC8A5005A31EE /* SXPfindsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59EB731C7DC8A5005A31EE /* SXPfindsViewController.swift */; };
+		ED59EB761C7DC8B1005A31EE /* SXPhomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59EB751C7DC8B1005A31EE /* SXPhomeViewController.swift */; };
+		ED59EB781C7DC8BE005A31EE /* SXPloginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59EB771C7DC8BE005A31EE /* SXPloginViewController.swift */; };
+		ED59EB7A1C7DC8CA005A31EE /* SXPmessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59EB791C7DC8CA005A31EE /* SXPmessageViewController.swift */; };
+		ED59EB7C1C7DC8D5005A31EE /* SXPsettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59EB7B1C7DC8D5005A31EE /* SXPsettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		ED59EB521C7DA219005A31EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED59EB571C7DA219005A31EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED59EB711C7DC534005A31EE /* SXPtabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SXPtabBarViewController.swift; path = weibo/Common/SXPtabBarViewController.swift; sourceTree = SOURCE_ROOT; };
+		ED59EB731C7DC8A5005A31EE /* SXPfindsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXPfindsViewController.swift; sourceTree = "<group>"; };
+		ED59EB751C7DC8B1005A31EE /* SXPhomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXPhomeViewController.swift; sourceTree = "<group>"; };
+		ED59EB771C7DC8BE005A31EE /* SXPloginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXPloginViewController.swift; sourceTree = "<group>"; };
+		ED59EB791C7DC8CA005A31EE /* SXPmessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXPmessageViewController.swift; sourceTree = "<group>"; };
+		ED59EB7B1C7DC8D5005A31EE /* SXPsettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SXPsettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +182,7 @@
 		ED59EB661C7DC34E005A31EE /* Finds */ = {
 			isa = PBXGroup;
 			children = (
+				ED59EB731C7DC8A5005A31EE /* SXPfindsViewController.swift */,
 			);
 			path = Finds;
 			sourceTree = "<group>";
@@ -179,6 +190,7 @@
 		ED59EB671C7DC34E005A31EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				ED59EB751C7DC8B1005A31EE /* SXPhomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -186,6 +198,7 @@
 		ED59EB681C7DC34E005A31EE /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				ED59EB771C7DC8BE005A31EE /* SXPloginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -193,6 +206,7 @@
 		ED59EB691C7DC34E005A31EE /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				ED59EB791C7DC8CA005A31EE /* SXPmessageViewController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -200,6 +214,7 @@
 		ED59EB6A1C7DC34E005A31EE /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				ED59EB7B1C7DC8D5005A31EE /* SXPsettingViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -374,8 +389,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED59EB7A1C7DC8CA005A31EE /* SXPmessageViewController.swift in Sources */,
+				ED59EB7C1C7DC8D5005A31EE /* SXPsettingViewController.swift in Sources */,
 				ED59EB4E1C7DA219005A31EE /* ViewController.swift in Sources */,
+				ED59EB741C7DC8A5005A31EE /* SXPfindsViewController.swift in Sources */,
+				ED59EB761C7DC8B1005A31EE /* SXPhomeViewController.swift in Sources */,
 				ED59EB721C7DC534005A31EE /* SXPtabBarViewController.swift in Sources */,
+				ED59EB781C7DC8BE005A31EE /* SXPloginViewController.swift in Sources */,
 				ED59EB4C1C7DA219005A31EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

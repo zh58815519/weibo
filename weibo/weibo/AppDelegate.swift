@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        sleep(2)
+        //sleep(2)
         
         //添加跟视图
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
