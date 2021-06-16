@@ -13,6 +13,11 @@ class SXPtabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //使用KVC替换掉tabBar
+        let tabar = SXPtabbar()
+        
+        setValue(tabar, forKey: "tabBar")
+        
         //添加控制器
         addChildViewController()
         
